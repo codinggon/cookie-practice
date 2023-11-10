@@ -19,7 +19,7 @@ public class LogInterceptor implements HandlerInterceptor {
 
         request.setAttribute(LOG_ID,uuid);
 
-        System.out.println("preHandle request : "+ uuid + requestURI + handler);
+        System.out.println("preHandle request : "+ uuid + requestURI +  request.getDispatcherType() + handler);
 
         //@RequestMapping : HandlerMethod
         //정적 리소스 : ResourceHttpRequestHandler
